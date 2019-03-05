@@ -2,57 +2,54 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-gap: 10px; 
+    grid-gap: 10px;
+    grid-template-areas: 
+    "h h h h h h h h h h h h"
+    "g g g g g g e e e e e e"
+    "s s s s s s d d d d d d"
+    "t t t t t t l l l k k k"
+    "f f f f f f f f f f f f";
+     
 }
 
 .header {
-    grid-column: 1 / -1;
-    grid-row: 1;
+    grid-area: "h";
 }
 
 .content {
-    grid-column: 1 / -1;
-    grid-row: 2 / -1;
+    grid-area:"g""e""s""d""t""l""k""f"
 }
 
 .footer {
-    grid-column: 1 / 7;
-    grid-row: 5 / -1
+    grid-area: "f";
 }
 
 .general {
-    grid-column: 1 / 7;
-    grid-row: 2 / 3;
+    grid-area: "g";
 }
 
 .skills {
-    grid-column: 1 / 7;
-    grid-row: 3 / 4;
+    grid-area: "s";
 }
 
 .tools {
-    grid-column: 1 / 7;
-    grid-row: 4 / 5;
+    grid-area: "t";
 }
 
 .experience {
-    grid-column: 7 / -1;
-    grid-row: 2 / 3;
+    grid-area: "e";
 }
 
 .education {
-    grid-column: 7 / -1;
-    grid-row: 3 / 4;
+    grid-area: "d";
 }
 
 .languages {
-    grid-column: 7 / 10;
-    grid-row: 3 / 4;
+    grid-area: "l";
 }
 
 .likes {
-    grid-column: 10 / -1;
-    grid-row: 4 / 5;
+    grid-area: "k";
 }
 
 .header, .profile, .title-text, .general, .skills, .tools, .experience, .education, .languages, .likes {
