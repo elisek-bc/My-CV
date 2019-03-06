@@ -1,61 +1,73 @@
+/*general*/
+body {
+    height: 100%;
+    margin: 50px;
+}
+
+/*grid*/
 .wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-gap: 10px;
-    grid-template-areas: 
-    "h h h h h h h h h h h h"
-    "g g g g g g e e e e e e"
-    "s s s s s s d d d d d d"
-    "t t t t t t l l l k k k"
-    "f f f f f f f f f f f f";
-     
+    grid-template-rows: 300px repeat(8, 1fr) 100px;
+    grid-gap: 10px;   
 }
 
-.header {
-    grid-area: "h";
+.profile {
+    grid-column: 1 / 5;
+    grid-row: 1 ;
 }
 
-.content {
-    grid-area:"g""e""s""d""t""l""k""f"
-}
-
-.footer {
-    grid-area: "f";
+.title-text {
+    grid-column: 5 / -1;
+    grid-row: 1;
 }
 
 .general {
-    grid-area: "g";
+    grid-column: 1 / 5;
+    grid-row: 2 / 4;
 }
 
 .skills {
-    grid-area: "s";
+    grid-column: 1 / 5;
+    grid-row: 4 / 7;
 }
 
 .tools {
-    grid-area: "t";
+    grid-column: 1 / 5;
+    grid-row: 7 / -2;
 }
 
 .experience {
-    grid-area: "e";
+    grid-column: 5 / -1;
+    grid-row: 2 / 5;
 }
 
 .education {
-    grid-area: "d";
+    grid-column: 5 / -1;
+    grid-row: 5 / 8;
 }
 
 .languages {
-    grid-area: "l";
+    grid-column: 5 / 9;
+    grid-row: 8 / -2;
 }
 
 .likes {
-    grid-area: "k";
+    grid-column: 9 / -1;
+    grid-row: 8 / -2;
 }
 
+.footer {
+    grid-column: 1 / -1;
+    grid-row: -1;
+}
+
+/*Test to see the divs*/
 .header, .profile, .title-text, .general, .skills, .tools, .experience, .education, .languages, .likes {
-    border:1px black;
+    border:1px solid black;
 }
 
+/*Font styling*/
 h1 {
     font-family: "Raleway",sans-serif;
     font-size: 50px;
@@ -92,4 +104,12 @@ ul, p {
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
+}
+
+/*image styling*/
+
+#profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
 }
