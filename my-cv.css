@@ -1,7 +1,8 @@
 /*general*/
 body {
     height: 100%;
-    margin: 50px;
+    margin: 80px;
+    background-color: #6F7762;
 }
 
 /*Test to see the divs*/
@@ -17,14 +18,17 @@ body {
     grid-template-rows: 250px;
     grid-gap: 10px;
     margin-bottom: 20px;
+    background-color:white;
 }
 
 .profile {
     grid-column: 1;
+    padding: 20px;
 }
 
 .title-text {
     grid-column: 2 / span 2;
+    padding: 20px;
 }
 
 /*Division into 2 columns of the content section*/
@@ -33,6 +37,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
+    background-color:white;
 }
 
 .content-left {
