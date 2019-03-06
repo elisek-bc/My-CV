@@ -9,6 +9,40 @@ body {
     border:1px solid black;
 }
 
+/*Division into 2 columns of the header section*/
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px;
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.profile {
+    grid-column: 1;
+}
+
+.title-text {
+    grid-column: 2 / span 2;
+}
+
+/*Division into 2 columns of the content section*/
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.content-left {
+    grid-column: 1;
+}
+
+.content-right {
+    grid-column: 2 / span 2;
+}
+
 /*Font styling*/
 h1 {
     font-family: "Raleway",sans-serif;
