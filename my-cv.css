@@ -1,13 +1,30 @@
 /*general*/
 body {
     height: 100%;
-    margin: 80px;
     background-color: #6F7762;
+    outline: 3px solid white;
+    border: 3px solid #6F7762;
+    max-width: 960px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+/*Keep border at smaller screens*/
+@media only screen and (max-width: 1160px) {
+    body {
+        margin: 50px;
+    }
 }
 
 /*Test to see the divs*/
-.header, .profile, .title-text, .general, .skills, .tools, .experience, .education, .languages, .likes {
-    border:1px solid black;
+ .header, .general, .skills, .tools, .experience, .education, .languages, .likes {
+    outline:1px solid #6F7762;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 /*DT: Division into 2 columns of the header section*/
@@ -16,8 +33,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-gap: 10px;
-    margin-bottom: 20px;
     background-color:white;
 }
 
@@ -35,7 +50,6 @@ body {
 @media only screen and (max-width: 640px) {
     .header {
         display: block;
-        margin-bottom: 20px;
         background-color:white;
     }
     
@@ -53,7 +67,6 @@ body {
 .content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
     background-color:white;
 }
 
@@ -69,7 +82,6 @@ body {
 @media only screen and (max-width: 640px) {
     .content {
         display: block;
-        margin-bottom: 20px;
         background-color:white;
     }
     
@@ -92,16 +104,22 @@ body {
 .general {
     grid-row: 1 / span 2;
     text-align: center;
+    padding: 10px;
 }
-
+.general a {
+    text-decoration:none;
+    color: grey;
+}
 .skills {
     grid-row: 3 / span 3;
     text-align: center;
+    padding: 10px;
 }
 
 .tools {
     grid-row: 6 / span 3;
     text-align: center;
+    padding: 10px;
 }
 
 /*Division into rows and columns of the right section*/
@@ -140,8 +158,58 @@ body {
 /*Mobile: Responsive content right section*/
 @media only screen and (max-width: 640px) {
 .content-right {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: repeat(10, auto);
+    margin: 0;
 }
+.languages {
+    grid-column: 1;
+    grid-row: 7 / span 2;
+    text-align: center;
+}
+
+.likes {
+    grid-column: 1;
+    grid-row: 9 / span 2;
+    text-align: center;
+    padding: 0px 30px 0px 30px;
+}
+}
+
+/*DT: Division 'experience' into 4x2 grid 
+.experience {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: repeat(4, 1fr)
+}
+.experience h3 {
+    grid-column: 1 , -1;
+    grid-row: 1;
+}
+.date1 {
+    grid-column: 1;
+    grid-row: 2;
+}
+.date2 {
+    grid-column: 1;
+    grid-row: 3;
+}
+.date3 {
+    grid-column: 1;
+    grid-row: 4;
+}
+.what1 {
+    grid-column: 2;
+    grid-row: 2;
+}
+.what2 {
+    grid-column: 2;
+    grid-row: 3;
+}
+.what3 {
+    grid-column: 2;
+    grid-row: 4;*/
 }
 
 /*Font styling*/
@@ -151,19 +219,38 @@ h1 {
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin: 0;
 }
 
 h2 {
     font-family: "Special Elite",cursive;
     font-size: 22px;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+/*Mobile: Responsive content text header*/
+@media only screen and (max-width: 640px) {
+    h1 {
+        font-size: 40px;
+        line-height: 34px;
+        text-align: center;
+    }
+
+    h2 {
+        margin-top: 5%;
+        text-align: center;
+        letter-spacing: 0.5px;
+    }
 }
 
 h3 {
     font-family: "Raleway",sans-serif;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-bottom: 1%;
 }
 
 h4 {
@@ -183,6 +270,7 @@ ul, p {
     line-height: 22px;
     list-style: none;
     padding-left:0;
+    color: grey;
 }
 
 /*image styling*/
