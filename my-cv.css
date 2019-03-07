@@ -163,20 +163,21 @@ body {
 .content-right {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-columns: repeat(10, auto);
+    grid-template-rows: repeat(10, auto);
     margin: 0;
 }
 .languages {
     grid-column: 1;
     grid-row: 7 / span 2;
     text-align: center;
+    padding: 20px;
 }
 
 .likes {
     grid-column: 1;
     grid-row: 9 / span 2;
     text-align: center;
-    padding: 0px 30px 0px 30px;
+    padding: 20px;
 }
 }
 
@@ -228,6 +229,26 @@ body {
     padding: 0px 20px 0px 20px;
 }
 
+/*Mobile: Experience grid */
+
+@media only screen and (max-width: 640px) {
+    
+    .experience {
+        display: block;
+    }
+
+    .experience h3 {
+        margin-bottom: 40px;
+    }
+    .date1, .date2, .date3, .what1, .what2, .what3 {
+        text-align: center;
+    }
+    
+    .what1, .what2, .what3 {
+        margin-bottom: 40px;
+}
+}
+
 /*DT: Division 'education' into 4x2 grid */
 .education {
     display: grid;
@@ -276,6 +297,24 @@ body {
     padding: 0px 20px 0px 20px;
 }
 
+/*Mobile: Education grid */
+@media only screen and (max-width: 640px) {
+    
+    .education {
+        display: block;
+    }
+
+    .education h3 {
+        margin-bottom: 40px;
+    }
+    
+    .year1, .year2, .year3, .whated1, .whated2, .whated3 {
+        text-align: center;
+    }
+    .whated1, .whated2, .whated3 {
+        margin-bottom: 40px;
+    }
+}
 /*DT: Table formatting*/
 
 .table {
