@@ -1,20 +1,30 @@
 /*general*/
+
 body {
-    height: 100%;
     background-color: #6F7762;
+    text-align: center;
+    margin-bottom:5px;
+}
+
+body img:hover {
+    filter: invert(100%)
+}
+
+.wrapper {
+    height: 100%;
     outline: 3px solid white;
     border: 3px solid #6F7762;
     max-width: 960px;
     margin: auto;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 
 }
 
 /*Keep border at smaller screens*/
 @media only screen and (max-width: 1160px) {
     body {
-        margin: 50px;
+        margin: 50px 50px 5px 50px;
     }
 }
 
@@ -247,10 +257,9 @@ table p {
     text-align: left;
     padding: 0px 20px 0px 20px;
 }
+/*Tablet and mobile: Experience grid*/
 
-/*Mobile: Experience grid */
-
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
     
     .experience {
         display: block;
@@ -316,8 +325,8 @@ table p {
     padding: 0px 20px 0px 20px;
 }
 
-/*Mobile: Education grid */
-@media only screen and (max-width: 640px) {
+/*Tablet and mobile: Education grid */
+@media only screen and (max-width: 768px) {
     
     .education {
         display: block;
@@ -335,8 +344,6 @@ table p {
     }
 }
 
-
-
 /*Font styling*/
 h1 {
     font-family: "Raleway",sans-serif;
@@ -344,7 +351,7 @@ h1 {
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin: 0;
+    margin:0;
 }
 
 h2 {
@@ -353,6 +360,22 @@ h2 {
     margin: 0;
     letter-spacing: 0.5px;
 }
+
+/*Tablet: Responsive content text header*/
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 45px;
+        line-height: 40px;
+        text-align: left;
+    }
+
+    h2 {
+        margin-top: 5%;
+        text-align:left;
+        letter-spacing: 0.5px;
+    }
+}
+
 
 /*Mobile: Responsive content text header*/
 @media only screen and (max-width: 640px) {
