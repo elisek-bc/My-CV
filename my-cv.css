@@ -180,40 +180,102 @@ body {
 }
 }
 
-/*DT: Division 'experience' into 4x2 grid 
+/*DT: Division 'experience' into 4x2 grid */
 .experience {
     display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: repeat(4, 1fr)
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 15px;
 }
 .experience h3 {
-    grid-column: 1 , -1;
+    grid-column: 1 / -1;
     grid-row: 1;
 }
 .date1 {
     grid-column: 1;
     grid-row: 2;
+    text-align: right;
+    padding: 0px 20px 0px 20px;
 }
 .date2 {
     grid-column: 1;
     grid-row: 3;
+    text-align: right;
+    padding: 0px 20px 0px 20px;
 }
 .date3 {
     grid-column: 1;
     grid-row: 4;
+    text-align: right;
+    padding: 0px 20px 0px 20px;
 }
 .what1 {
     grid-column: 2;
     grid-row: 2;
+    text-align: left;
+    padding: 0px 20px 0px 20px;
 }
 .what2 {
     grid-column: 2;
     grid-row: 3;
+    text-align: left;
+    padding: 0px 20px 0px 20px;
 }
 .what3 {
     grid-column: 2;
     grid-row: 4;
-}*/
+    text-align: left;
+    padding: 0px 20px 0px 20px;
+}
+
+/*DT: Division 'education' into 4x2 grid */
+.education {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 15px;
+}
+.education h3 {
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+.year1 {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: right;
+    padding: 0px 20px 0px 20px;
+}
+.year2 {
+    grid-column: 1;
+    grid-row: 3;
+    text-align: right;
+    padding: 0px 20px 0px 20px;
+}
+.year3 {
+    grid-column: 1;
+    grid-row: 4;
+    text-align: right;
+    padding: 0px 20px 0px 20px;
+}
+.whated1 {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: left;
+    padding: 0px 20px 0px 20px;
+}
+.whated2 {
+    grid-column: 2;
+    grid-row: 3;
+    text-align: left;
+    padding: 0px 20px 0px 20px;
+}
+.whated3 {
+    grid-column: 2;
+    grid-row: 4;
+    text-align: left;
+    padding: 0px 20px 0px 20px;
+}
+
 
 /*Font styling*/
 h1 {
@@ -259,12 +321,17 @@ h3 {
 h4 {
     font-family: "Special Elite",cursive;
     font-size: 14px;
+    margin: 0;
+    margin-top: 10px;
 }
 
 h5 {
     font-family: "Raleway",sans-serif;
     font-size: 14px;
     font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 10px;
 }
 ul, p {
     font-family: "Raleway",sans-serif;
@@ -276,6 +343,9 @@ ul, p {
     color: grey;
 }
 
+.experience p , .education p {
+    margin: 5px 0px 5px 0px;
+}
 /*image styling*/
 
 #profile {
