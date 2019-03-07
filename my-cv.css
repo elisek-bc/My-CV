@@ -34,6 +34,8 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     background-color:white;
+    justify-items: center;
+    align-items: center;
 }
 
 .profile {
@@ -51,6 +53,7 @@ body {
     .header {
         display: block;
         background-color:white;
+        text-align: center;
     }
     
     .profile {
@@ -209,8 +212,8 @@ body {
 }
 .what3 {
     grid-column: 2;
-    grid-row: 4;*/
-}
+    grid-row: 4;
+}*/
 
 /*Font styling*/
 h1 {
