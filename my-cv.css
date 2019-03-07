@@ -276,7 +276,22 @@ body {
     padding: 0px 20px 0px 20px;
 }
 
+/*DT: Table formatting*/
 
+.table {
+    margin-top: 40px;
+}
+
+table h4 {
+    margin: 0;
+    padding: 5px;
+    text-align: right;
+}
+table p {
+    margin: 0;
+    padding: 5px;
+    text-align: left;
+}
 /*Font styling*/
 h1 {
     font-family: "Raleway",sans-serif;
@@ -346,6 +361,7 @@ ul, p {
 .experience p , .education p {
     margin: 5px 0px 5px 0px;
 }
+
 /*image styling*/
 
 #profile {
@@ -354,122 +370,3 @@ ul, p {
     border-radius: 100px;
     object-fit: cover;
 }
-
-
-/* PREVIOUS VERSION: DO NOT ACTIVATE UNLESS SURE BECAUSE IT WILL MESS THINGS UP!!
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 200px repeat(8, 1fr) 100px;
-    grid-gap: 10px;   
-}
-
-.header {
-    grid-column: 1 / -1;
-    grid-row: 1 ;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-}
-
-.footer {
-    grid-column: 1 / -1;
-    grid-row: -1;
-    text-align: center;
-}
-
-.profile {
-    grid-column: 1;
-}
-
-.title-text {
-    grid-column: 2 / span 2;
-    padding: 20px;
-}
-
-.content-left {
-    grid-column: 1 / 5;
-    grid-row: 2 / -2;
-    display: grid;
-    grid-template-rows: repeat(8, 1fr);
-    grid-gap:10px;
-}
-
-.general {
-    grid-row: 1 / span 2;
-    text-align: center;
-    padding: 20px;
-}
-
-.skills {
-    grid-row: 3 / span 3;
-    text-align: center;
-    padding: 20px;
-}
-
-.tools {
-    grid-row: 6 / span 3;
-    text-align: center;
-    padding: 20px;
-}
-
-.content-right {
-    grid-column: 5 / -1;
-    grid-row: 2 / -2;
-    display: grid;
-    grid-template-rows: repeat(8, 1fr);
-    grid-template-columns: 1fr 1fr;
-    grid-gap:10px;
-}
-
-.experience {
-    grid-row: 1 / span 3;
-    grid-column: 1 / -1;
-    padding: 20px;
-}
-
-.education {
-    grid-row: 4 / span 3;
-    grid-column: 1 / -1;
-    padding: 20px;
-}
-
-.languages {
-    grid-row: 7 / span 2;
-    padding: 20px;
-}
-
-.likes {
-    grid-row: 7 / span 2;
-    padding: 20px;
-    text-align: center;
-}
-
-@media screen and (max-width: 640px) {
-    .wrapper {
-        display: block;
-    }
-    
-    
-    .header {
-        grid-column: 1 / -1;
-        grid-row: 1 ;
-    }
-
-    .content-right {
-        grid-column: 1 / -1;
-        grid-row: 2 / -2;
-        display: grid;
-        grid-template-rows: repeat(8, 1fr);
-        grid-gap:10px;
-    }
-
-    .content-left {
-        grid-column: 1 / -1;
-        grid-row: 2 / -2;
-        display: grid;
-        grid-template-rows: repeat(8, 1fr);
-        grid-gap:10px;
-    }
-}
-*/
