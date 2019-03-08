@@ -21,12 +21,12 @@ body {
 
 }
 
-/*Keep border at smaller screens*/
+/*Keep border at smaller screens
 @media only screen and (max-width: 1160px) {
     body {
         margin: 20px 20px 5px 20px;
     }
-}
+}*/
 
 /*Keep border at smaller screens*/
 @media only screen and (max-width: 640px) {
