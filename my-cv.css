@@ -6,7 +6,7 @@ body {
     margin-bottom:5px;
 }
 
-body img:hover {
+.icon:hover {
     filter: invert(100%)
 }
 
