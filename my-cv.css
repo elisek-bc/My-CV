@@ -28,6 +28,13 @@ body {
     }
 }
 
+/*Keep border at smaller screens*/
+@media only screen and (max-width: 640px) {
+    body {
+        margin: 30px 30px 5px 30px;
+    }
+}
+
 /*Test to see the divs*/
  .header, .general, .skills, .tools, .experience, .education, .languages, .likes {
     outline:1px solid #6F7762;
